@@ -228,7 +228,7 @@ int Controller::selectDesk(Message &message, int clientFd) {
             //填充姓名信息
             Message message;
             for(auto iter = desk->client.begin(); iter != desk->client.end(); iter++) {
-                message.OPTION = 0;
+                message.OPTION = -1;
                 fillMsg(message, iter->first, 1);
                 sendMsg(message, iter->first);
             }
