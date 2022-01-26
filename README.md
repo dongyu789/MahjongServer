@@ -6,7 +6,7 @@ one server to Mahjong game
 
 ## 服务器设计
 - c++网络编程
-- io多路复用技术（epoll）
+- io多路复用（epoll）
 - 守护进程（未实现）
 
 ## 服务器设计思路
