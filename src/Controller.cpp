@@ -237,8 +237,8 @@ int Controller::selectDesk(Message &message, int clientFd) {
             sleep(3);
 
             //测试点位
-            desk->cleanDeskTest(0);
-            //desk->cleanDesk(0);
+            //desk->cleanDeskTest(0);
+            desk->cleanDesk(0);
         }
     } else {
         //桌子满了，不可以加入
