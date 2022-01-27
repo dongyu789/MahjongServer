@@ -26,6 +26,7 @@ int main() {
     if(pid > 0) {
         exit(0);//父进程退出
     }
+    printf("守护进程已启动，进程号:%d\n", getpid());
     
     // 子进程重新创建会话，脱离当前控制终端
     setsid();
