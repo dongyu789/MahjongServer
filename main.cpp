@@ -45,7 +45,8 @@ int main() {
     // dup2(fd, STDERR_FILENO);
 
     //重定向,打印输出到日志文件中
-    int fd = open("./logs/mylog.log", O_RDWR | O_APPEND | O_CREAT);
+    mkdir("./logs", 0777);
+    int fd = open("./logs/mylog.log", O_RDWR | O_APPEND | O_CREAT, 0644);
     dup2(fd, STDIN_FILENO);
     dup2(fd, STDOUT_FILENO);
     dup2(fd, STDERR_FILENO);
